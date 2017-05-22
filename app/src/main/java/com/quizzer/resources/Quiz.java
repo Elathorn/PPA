@@ -1,5 +1,6 @@
 package com.quizzer.resources;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,7 +11,23 @@ public class Quiz {
     int id;
     String name;
     List<Question> questions;
-    int numberOfQuestions;
+    
+    public ArrayList<String> getQuestionsNames() {
+        ArrayList<String> list = new ArrayList<>();
+        for (Question question: questions) {
+            list.add(question.getName());
+        }
+        return list;
+    }
+
+    public Quiz(String name) {
+        this.name = name;
+        this.questions = new ArrayList<Question>();
+    }
+
+    public void AddQuestion(Question question) {
+        questions.add(question);
+    }
 
     public int getId() {
         return id;
@@ -37,17 +54,13 @@ public class Quiz {
     }
 
     public int getNumberOfQuestions() {
-        return numberOfQuestions;
+        return questions.size();
     }
 
-    public void setNumberOfQuestions(int numberOfQuestions) {
-        this.numberOfQuestions = numberOfQuestions;
-    }
 
     public Quiz(int id, String name, List<Question> questions) {
         this.id = id;
         this.name = name;
         this.questions = questions;
-        this.numberOfQuestions = questions.size();
     }
 }

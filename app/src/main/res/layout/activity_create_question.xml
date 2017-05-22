@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quizzer.activities.CreateQuestionActivity">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="502dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/edtQuestionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/question_name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/edtCorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/correct_answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtIncorrectAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/incorrect_answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtOptionalAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/optional_incorrect_answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtOptionalAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/optional_incorrect_answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtOptionalAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/optional_incorrect_answer"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtOptionalAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/optional_incorrect_answer"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

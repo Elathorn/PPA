@@ -1,5 +1,6 @@
 package com.quizzer.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +29,7 @@ public class ManageActivity extends AppCompatActivity  implements View.OnClickLi
     @Override
     public void onClick(View v) {
         if (v == btnAddQuiz) {
-
+            startActivity(new Intent(this, CreateQuizActivity.class));
         }
 
         if (v == btnDeleteQuiz) {

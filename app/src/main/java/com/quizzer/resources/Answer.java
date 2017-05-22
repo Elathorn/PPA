@@ -5,20 +5,46 @@ package com.quizzer.resources;
  */
 
 public class Answer {
-    String question;
+    String answer;
     int id;
+    boolean correct;
 
-    public Answer(String question, int id) {
-        this.question = question;
+    public boolean isCorrect() {
+        return correct;
+    }
+
+    public void setCorrect(boolean correct) {
+        this.correct = correct;
+    }
+
+    public Answer(String answer, int id, boolean correct) {
+
+        this.answer = answer;
         this.id = id;
+        this.correct = correct;
     }
 
-    public String getQuestion() {
-        return question;
+    public Answer(String answer, int id) {
+        this.answer = answer;
+        this.id = id;
+        correct = false;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
+    public Answer(String answer, boolean correct) {
+        this.answer = answer;
+        this.correct = correct;
+    }
+
+    public Answer(String answer) {
+        this.answer = answer;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public int getId() {

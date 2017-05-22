@@ -1,15 +1,18 @@
 package com.quizzer.resources;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Elas PC on 2017-05-17.
  */
 
-public class Question {
+public class Question implements Serializable {
     String name;
     List<Answer> answers;
     int id;
+
+    static public final String Tag = "QUESTION";
 
     public String getName() {
         return name;
@@ -27,6 +30,10 @@ public class Question {
         this.answers = answers;
     }
 
+    public int getNumberOfAnswers() {
+        return answers.size();
+    }
+
     public int getId() {
         return id;
     }
@@ -41,4 +48,6 @@ public class Question {
         this.answers = answers;
         this.id = id;
     }
+
+    public Question() { }
 }

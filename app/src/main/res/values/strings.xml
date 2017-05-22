@@ -19,7 +19,20 @@
     <string name="start_quiz">Start quiz</string>
     <string name="manage_quizzes">Manage quizzes</string>
 
-    <!-- Strings relate to managing quizzes -->
+    <!-- Strings related to managing quizzes -->
     <string name="add_quiz">Add quiz</string>
     <string name="delete_quiz">Delete quiz</string>
+    <string name="title_activity_create_quiz">CreateQuizActivity</string>
+
+    <!-- Strings related to quiz -->
+    <string name="quiz_name">Quiz name</string>
+    <string name="questions_list">Questions list</string>
+
+
+    <!-- Strings related to question -->
+    <string name="question_name">Question name</string>
+    <string name="answers_list">Answers</string>
+    <string name="correct_answer">Correct answer</string>
+    <string name="incorrect_answer">Incorrect answer</string>
+    <string name="optional_incorrect_answer">Optional incorrect answer</string>
 </resources>
