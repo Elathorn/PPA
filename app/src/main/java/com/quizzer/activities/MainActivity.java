@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View view) {
 
         if (view == buttonStartQuiz) {
-            //startActivity(new Intent(this, .class));
+            startActivity(new Intent(this, SolveQuiz.class));
         }
 
         if (view == buttonManageQuizzes) {

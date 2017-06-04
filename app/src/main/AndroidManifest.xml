@@ -31,6 +31,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.CreateQuestionActivity" />
         <activity android:name=".activities.DeleteQuizActivity" />
+        <activity android:name=".activities.SolveQuiz"></activity>
     </application>
 
 </manifest>

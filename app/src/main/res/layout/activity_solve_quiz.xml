@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quizzer.activities.SolveQuiz">
+
+    <ViewAnimator
+        android:id="@+id/vaSolveQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pbSolveQuiz"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="361dp"
+                android:layout_height="133dp"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnAnsw1"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_alignEnd="@+id/tvQuestion"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/tvQuestion"
+                android:layout_marginBottom="10dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/btnAnsw2"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/btnAnsw1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/btnAnsw3"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:text="Button"
+                android:layout_above="@+id/btnAnsw1"
+                android:layout_alignLeft="@+id/btnAnsw1"
+                android:layout_alignStart="@+id/btnAnsw1"
+                android:layout_marginBottom="25dp" />
+
+            <Button
+                android:id="@+id/btnAnsw4"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:text="Button"
+                android:layout_alignBottom="@+id/btnAnsw3"
+                android:layout_alignLeft="@+id/btnAnsw2"
+                android:layout_alignStart="@+id/btnAnsw2" />
+
+            <Button
+                android:id="@+id/btnAnsw6"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="38dp"
+                android:text="Button"
+                android:layout_above="@+id/btnAnsw4"
+                android:layout_alignLeft="@+id/btnAnsw4"
+                android:layout_alignStart="@+id/btnAnsw4" />
+
+            <Button
+                android:id="@+id/btnAnsw5"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:layout_alignEnd="@+id/btnAnsw3"
+                android:layout_alignRight="@+id/btnAnsw3"
+                android:layout_alignTop="@+id/btnAnsw6"
+                android:text="Button" />
+        </RelativeLayout>
+    </ViewAnimator>
+</RelativeLayout>
