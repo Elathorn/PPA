@@ -25,12 +25,18 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp" />
 
-        <ListView
-            android:id="@+id/listViewQuizList"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewQuizList"
             android:layout_width="240dp"
-            android:layout_height="495dp"
+            android:layout_height="354dp"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/btnSaveQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save" />
 
     </LinearLayout>
 </android.support.v4.widget.DrawerLayout>

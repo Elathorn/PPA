@@ -33,7 +33,7 @@ public class ManageActivity extends AppCompatActivity  implements View.OnClickLi
         }
 
         if (v == btnDeleteQuiz) {
-
+            startActivity(new Intent(this, DeleteQuizActivity.class));
         }
     }
 }

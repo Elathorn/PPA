@@ -29,7 +29,8 @@
             android:name=".activities.CreateQuizActivity"
             android:label="@string/title_activity_create_quiz"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.CreateQuestionActivity"></activity>
+        <activity android:name=".activities.CreateQuestionActivity" />
+        <activity android:name=".activities.DeleteQuizActivity" />
     </application>
 
 </manifest>

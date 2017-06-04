@@ -71,6 +71,12 @@
             android:hint="@string/optional_incorrect_answer"
             android:inputType="textPersonName" />
 
+        <Button
+            android:id="@+id/add_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accept" />
+
 
     </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

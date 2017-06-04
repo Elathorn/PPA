@@ -1,10 +1,12 @@
 package com.quizzer.resources;
 
+import java.io.Serializable;
+
 /**
  * Created by Elas PC on 2017-05-17.
  */
 
-public class Answer {
+public class Answer implements Serializable {
     String answer;
     int id;
     boolean correct;
@@ -33,6 +35,10 @@ public class Answer {
     public Answer(String answer, boolean correct) {
         this.answer = answer;
         this.correct = correct;
+    }
+
+    public Answer() {
+
     }
 
     public Answer(String answer) {
